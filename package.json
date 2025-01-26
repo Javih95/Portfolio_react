@@ -1,0 +1,11 @@
+{
+  "name": "portfolio_react",
+  "version": "1.0.0",
+  "description": "Portfolio personal de Javih",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Javih",
+  "license": "ISC"
+}
