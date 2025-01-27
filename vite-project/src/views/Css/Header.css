@@ -1,23 +1,16 @@
-.header {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .header-card {
+
+  .header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333; /* Fondo oscuro para la tarjeta */
+    margin: 2rem auto;
+    padding: 2rem;
+    max-width: 900px;
+    width: 100%;
+    background-color: #333;
     color: #fff;
     border-radius: 10px;
     border: 2px solid #fff;
-    max-width: 900px;
-    width: 100%;
-    padding: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
   }
   
   .header-content {
@@ -33,7 +26,7 @@
   
   .header-subtitle {
     font-size: 1.5rem;
-    color: #00bcd4; /* Color destacado */
+    color: #00bcd4;
     margin: 0.5rem 0;
   }
   
@@ -43,19 +36,25 @@
   }
   
   .header-image img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%; /* Foto redonda */
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
     border: 2px solid #fff;
     object-fit: cover;
     margin-right: 10px;
   }
+
   .header-socials{
     display: flex;
     gap: 1rem;
    margin-top: 1rem;
   }
+
   .header-socials a{
     font-size: 2.5rem;
     color: #00bcd4; 
+  }
+  
+  .header-socials a:hover {
+    transform: scale(1.05);
   }
