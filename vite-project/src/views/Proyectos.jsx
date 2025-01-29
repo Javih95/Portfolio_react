@@ -32,7 +32,7 @@ export const Projectos = () => {
   ];
 
   return (
-    <section id="projects" className="projects">
+    <section id="projects" className="projects card">
       <h2>Proyectos</h2>
       <div className="projects-container">
         {projects.map(project => (

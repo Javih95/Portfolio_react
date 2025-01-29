@@ -1,71 +1,59 @@
-.projects {
-    background-color: #f9f9f9;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 900px;
-    padding: 2rem;
-    width: 100%;
-    margin: 2rem auto;
-  }
-  
-  .projects h2 {
-    font-size: 2rem;
-    margin-bottom: 1.5rem;
-    margin-left: 2rem;
-    color: #333;
-  }
-  
-  .projects-container {
-    margin: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
-    justify-items: center;
-  }
-  
-  .project-card {
-    background: #ffffff;
-    border: 2px solid #ffffff;
-    border-radius: 12px;
-    padding: 1.5rem;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
-  }
-  
-  .project-card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
-  }
-  
-  .project-image {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-  }
-  
-  .project-card h3 {
-    font-size: 1.5rem;
-    margin: 0.5rem 0;
-    color: #333;
-  }
-  
-  .project-card p {
-    font-size: 1rem;
-    color: #555;
-    margin-bottom: 1rem;
-  }
-  
-  .project-links a {
-    display: inline-block;
-    font-size: 1rem;
-    color: #00bcd4;
-    text-decoration: none;
-    margin: 0 0.5rem;
-    transition: color 0.3s;
-  }
-  
-  .project-links a:hover {
-    color: #0288d1;
-  }
-  
+.projects h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  margin-left: 2rem;
+}
+
+.projects-container {
+  margin: 2rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  justify-items: center;
+}
+
+.project-card {
+  background: #ffffff;
+  border: 2px solid #ffffff;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3);
+}
+
+.project-image {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.project-card h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.project-card p {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 1rem;
+}
+
+.project-links a {
+  display: inline-block;
+  font-size: 1rem;
+  color: #00bcd4;
+  text-decoration: none;
+  margin: 0 0.5rem;
+  transition: color 0.3s;
+}
+
+.project-links a:hover {
+  color: #0288d1;
+}

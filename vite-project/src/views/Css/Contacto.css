@@ -1,20 +1,16 @@
 /* Sección de Contacto */
 .contact {
-    padding: 2rem;
-    background-color: #f9f9f9;
     text-align: center;
   }
   
   .contact h2 {
     font-size: 2rem;
     margin-bottom: 1rem;
-    color: #333;
   }
   
   .contact p {
     font-size: 1.2rem;
     margin-bottom: 2rem;
-    color: #555;
   }
   
   .contact-form {

@@ -2,7 +2,7 @@ import './Css/SobreMi.css';
 import {LineaDeTiempo} from"../componentes/LineaDeTiempo"
 export const SobreMi= () => {
   return (
-    <section id="about-me" className="about-me">
+    <section id="about-me" className="about-me card">
       <h2>Sobre Mí</h2>
       <div className="about-me-content">
         <p>

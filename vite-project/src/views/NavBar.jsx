@@ -9,7 +9,7 @@ export function Navbar() {
         </a>
         <ul className="navbar-menu">
           <li className="navbar-item">
-            <a href="#about" className="navbar-link">
+            <a href="#about-me" className="navbar-link">
               Sobre mí
             </a>
           </li>

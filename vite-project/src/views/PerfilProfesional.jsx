@@ -1,7 +1,7 @@
 import "./Css/PerfilProfesional.css"
 export function PerfilProfesional() {
   return (
-    <section className="profile-card">
+    <section className="profile-card card">
       <div className="contenido">
       <h2>Perfil Profesional</h2>
       <p>

@@ -12,7 +12,7 @@ export const Skills = () => {
       ];
     
       return (
-        <section id="skills" className="skills">
+        <section id="skills" className="skills card">
           <h2>Habilidades</h2>
           <div className="skills-container">
             {skills.map(skill => (

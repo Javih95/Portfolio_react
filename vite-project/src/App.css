@@ -1,3 +1,30 @@
-body{
-  background-color: #333;
+body {
+  background: radial-gradient(ellipse at top, #3b0f65, #121212),
+    radial-gradient(ellipse at bottom, #101b99, #121212);
+  color: white;
+}
+
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.card {
+  /*border-radius: 10px;*/
+  /*border: 2px solid #fff;*/
+  max-width: 900px;
+  width: 100%;
+  margin: 16px auto;
+  padding: 16px;
+  animation: fadeInUp 1s ease-out;
 }

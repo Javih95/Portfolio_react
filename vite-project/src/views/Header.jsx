@@ -4,7 +4,7 @@ import{FaWhatsapp} from "react-icons/fa";
 import{IoMail} from "react-icons/io5";
 export function Header () {
   return (
-    <header className="header">
+    <header className="header card">
         <div className="header-content">
           <h1 className="header-title">Javier Aguirre</h1>
           <h2 className="header-subtitle">Desarrollador Fullstack</h2>

@@ -23,7 +23,7 @@ export const Contacto = () => {
       );
   };
   return (
-    <section id="contact" className="contact">
+    <section id="contact" className="contact card">
       <h2>Contacto</h2>
       <p>¿Quieres colaborar conmigo o tienes alguna consulta? ¡Escríbeme!</p>
       <form className="contact-form" ref={form} onSubmit={sendEmail}>
