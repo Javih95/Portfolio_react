@@ -34,16 +34,16 @@ export const Contacto = () => {
       </form>
       <div className="contact-links">
         <a
-          href="https://linkedin.com/in/tu-perfil"
+          href="https://www.linkedin.com/in/javier-aguirre95"
           target="_blank"
           rel="noopener noreferrer"
         >
           LinkedIn
         </a>
-        <a href="https://wa.me/tu-numero" target="_blank" rel="noopener noreferrer">
-          WhatsApp
+        <a href="https://github.com/Javih95" target="_blank" rel="noopener noreferrer">
+          GitHub
         </a>
-        <a href="mailto:tu-email@gmail.com" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:javih_aguirre@outlook.es" target="_blank" rel="noopener noreferrer">
           Email
         </a>
       </div>

@@ -6,14 +6,14 @@ export const SobreMi= () => {
       <h2>Sobre Mí</h2>
       <div className="about-me-content">
         <p>
-          Soy desarrollador fullstack especializado en tecnologías como React, Node.js y .NET. 
-          Me apasiona crear soluciones innovadoras y videojuegos que mezclen creatividad y funcionalidad. 
-          Actualmente, estoy trabajando en proyectos que combinan desarrollo web y diseño de videojuegos.
+        "Soy desarrollador full stack dedicado a crear soluciones innovadoras y videojuegos que fusionan creatividad y funcionalidad. 
+        Mi especialización en tecnologías como React, Node.js y .NET me permite desarrollar aplicaciones web robustas y escalables,
+         mientras que mi interés en el diseño de videojuegos me impulsa a explorar nuevas formas de interacción y entretenimiento. 
+         Actualmente, trabajo en proyectos que combinan ambos mundos, buscando crear experiencias únicas para los usuarios."
         </p>
         <p>
-          Disfruto aprender nuevas tecnologías y mejorar mis habilidades constantemente. 
-          En mi tiempo libre, me gusta jugar videojuegos, explorar nuevas recetas en la cocina, 
-          y trabajar en proyectos de robótica con Arduino.
+        Disfruto del aprendizaje continuo y la exploración de nuevas tecnologías.
+        En mi tiempo libre, me sumerjo en el mundo del desarrollo de videojuegos,me informo y experimento con avances tecnologicos y doy vida a proyectos de robótica con Arduino.
         </p>
       </div>
       <LineaDeTiempo/>

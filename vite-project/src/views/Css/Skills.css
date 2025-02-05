@@ -8,15 +8,16 @@
   margin-bottom: 1.5rem;
   color: #ffffff;
 }
-
+.skills h3{
+  margin-left: 2rem;
+}
 .skills-container {
   margin: 2rem;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
   gap: 2rem;
   justify-items: center;
 }
-
 .skill-card {
   background: #ffffff;
   border: 2px solid #ffffff;
@@ -38,5 +39,10 @@
 .skill-card h3 {
   font-size: 16px;
   color: #333;
+  margin-top: 0.5rem;
+  margin-left: 2rem;
+}
+.skills h4{
+  color:#00bcd4;
   margin-top: 0.5rem;
 }

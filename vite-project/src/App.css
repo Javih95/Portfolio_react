@@ -19,12 +19,47 @@ html {
     transform: translateY(0);
   }
 }
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .card {
-  /*border-radius: 10px;*/
-  /*border: 2px solid #fff;*/
   max-width: 900px;
   width: 100%;
   margin: 16px auto;
   padding: 16px;
+}
+header
+{
   animation: fadeInUp 1s ease-out;
+}
+.profile-card{
+  animation: fadeInUp 1s ease-out;
+}
+@keyframes slideInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
 }

@@ -1,33 +1,33 @@
+import { UseInView } from "../hooks/useInViews";
 import './Css/Header.css';
-import{FaLinkedin} from "react-icons/fa";
-import{FaWhatsapp} from "react-icons/fa";
-import{IoMail} from "react-icons/io5";
-export function Header () {
+import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { IoMail } from "react-icons/io5";
+
+export function Header() {
+  const [headerRef, isHeaderVisible] = UseInView();
   return (
-    <header className="header card">
-        <div className="header-content">
-          <h1 className="header-title">Javier Aguirre</h1>
-          <h2 className="header-subtitle">Desarrollador Fullstack</h2>
-          <p className="header-description">
-            Soy un desarrollador apasionado con experiencia en tecnologías como .NET, React, Node.js y Unity. 
-            Me encanta resolver problemas y crear soluciones innovadoras.
-          </p>
-          <div className="header-socials">
-            <a href="https://www.linkedin.com/in/javier-dev" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin/>
-            </a>
-            <a href="https://wa.me/yournumber" target="_blank" rel="noopener noreferrer">
-              <FaWhatsapp/>
-            </a>
-            <a href="mailto:javier@email.com" target="_blank" rel="noopener noreferrer">
-              <IoMail/>
-            </a>
-          </div>
+    <header ref={headerRef} className={`header card fade-in ${isHeaderVisible ? "visible" : ""}`}>
+      <div className="header-content">
+        <h1 className="header-title">Javier Aguirre</h1>
+        <h2 className="header-subtitle">Desarrollador Fullstack</h2>
+        <p className="header-description">
+        Transformo desafíos en soluciones efectivas. Si buscas un desarrollador comprometido para tu equipo o proyecto, escríbeme y trabajemos juntos.
+        </p>
+        <div className="header-socials">
+          <a href="https://www.linkedin.com/in/javier-aguirre95" target="_blank" rel="noopener noreferrer">
+            <FaLinkedin />
+          </a>
+          <a href="https://github.com/Javih95" target="_blank" rel="noopener noreferrer">
+            <FaGithub />
+          </a>
+          <a href="mailto:javih_aguirre@outlook.es" target="_blank" rel="noopener noreferrer">
+            <IoMail />
+          </a>
         </div>
-        <div className="header-image">
-          <img src="../public\Foto_perfil.jpeg" alt="Foto de Javih"/>
-        </div>
+      </div>
+      <div className="header-image">
+        <img src="/Foto_perfil.jpeg" alt="Foto de Javih" />
+      </div>
     </header>
   );
-};
-
+}
