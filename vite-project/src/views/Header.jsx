@@ -6,7 +6,7 @@ import { IoMail } from "react-icons/io5";
 export function Header() {
   const [headerRef, isHeaderVisible] = UseInView();
   return (
-    <header ref={headerRef} className={`header card fade-in ${isHeaderVisible ? "visible" : ""}`}>
+    <header ref={headerRef} className={`header card slide-in ${isHeaderVisible ? "visible" : ""}`}>
       <div className="header-content">
         <h1 className="header-title">Javier Aguirre</h1>
         <h2 className="header-subtitle">Desarrollador Fullstack</h2>

@@ -1,5 +1,5 @@
 import './Css/Skills.css';
-/*import { UseInView } from "../hooks/useInViews";*/
+import { UseInView } from "../hooks/useInViews";
 import { FaReact, FaNodeJs, FaDatabase, FaJs, FaHtml5, FaBootstrap, FaCogs, FaPython, FaGitAlt, FaGamepad, FaMicrochip, FaAndroid, FaCode, FaCheckSquare, FaPlug, FaPuzzlePiece, FaBook } from 'react-icons/fa';
 
 export const Skills = () => {
@@ -21,13 +21,12 @@ export const Skills = () => {
     { id: 17, name: 'Unit Testing', icon: <FaCheckSquare />, category: 'other' }
   ];
 
-  /*const [perfilProfesionalRef, isPerfilProfesionalVisible] = UseInView();*/
+  const [skillsRef, skillsVisible] = UseInView();
   return (
     <section
       id="skills"
-      /*ref={perfilProfesionalRef}
-      className={`skills card fade-in ${isPerfilProfesionalVisible ? "visible" : ""}`}*/
-      className={"skills card"}
+      ref={skillsRef}
+      className={`skills card slide-in ${skillsVisible ? "visible" : ""}`}
     >
       <h2>Habilidades</h2>
       <div className="skills-wrapper">

@@ -3,7 +3,7 @@ import { UseInView } from "../hooks/useInViews";
 export function PerfilProfesional() {
   const [perfilProfesionalRef, isPerfilProfesionalVisible] = UseInView();
   return (
-    <section ref={perfilProfesionalRef} className={`profile-card card fade-in ${isPerfilProfesionalVisible ? "visible" : ""}`}>
+    <section ref={perfilProfesionalRef} className={`profile-card card slide-in-right ${isPerfilProfesionalVisible ? "visible" : ""}`}>
       <div className="contenido">
       <h2>Perfil Profesional</h2>
       <p>

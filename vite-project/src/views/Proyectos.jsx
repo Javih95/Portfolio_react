@@ -8,7 +8,7 @@ export const Projectos = () => {
       title: 'Control de Stock API',
       description:
         'API para gestionar inventarios, desarrollada con Node.js, Express y MySQL.',
-      image: 'project1.png', // Imagen de ejemplo
+      image: 'project1.png',
       demoLink: 'https://tuprojectdemo.com',
       repoLink: 'https://github.com/Javih95/api_controlStock_deploy',
     },
@@ -51,7 +51,7 @@ export const Projectos = () => {
   ];
 
   return (
-    <section  ref={proyectosRef} id="projects" className={`projects card fade-in ${isProyectosVisible ? "visible" : ""}`}>
+    <section  ref={proyectosRef} id="projects" className={`projects card slide-in-right ${isProyectosVisible ? "visible" : ""}`}>
       <h2>Proyectos</h2>
       <div className="projects-container">
         {projects.map(project => (

@@ -12,7 +12,7 @@ html {
 @keyframes fadeInUp {
   from {
     opacity: 0;
-    transform: translateY(20px);
+    transform: translateY(50px);
   }
   to {
     opacity: 1;
@@ -21,7 +21,7 @@ html {
 }
 .fade-in {
   opacity: 0;
-  transform: translateY(20px);
+  transform: translateY(50px);
   transition: opacity 0.8s ease-out, transform 0.8s ease-out;
 }
 .fade-in.visible {
@@ -35,13 +35,7 @@ html {
   margin: 16px auto;
   padding: 16px;
 }
-header
-{
-  animation: fadeInUp 1s ease-out;
-}
-.profile-card{
-  animation: fadeInUp 1s ease-out;
-}
+
 @keyframes slideInLeft {
   from {
     opacity: 0;
@@ -60,6 +54,27 @@ header
 }
 
 .slide-in.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(150px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(150px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.slide-in-right.visible {
   opacity: 1;
   transform: translateX(0);
 }

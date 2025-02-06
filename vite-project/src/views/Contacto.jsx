@@ -1,11 +1,11 @@
 import React, { useRef } from 'react';
 import emailjs from '@emailjs/browser';
-
+import { UseInView } from "../hooks/useInViews";
 import "./Css/Contacto.css"
 
 export const Contacto = () => {
+  const [contactoRef, contactoVisible] = UseInView();
   const form = useRef();
-
   const sendEmail = (e) => {
     e.preventDefault();
 
@@ -23,7 +23,7 @@ export const Contacto = () => {
       );
   };
   return (
-    <section id="contact" className="contact card">
+    <section id="contact" ref={contactoRef} className={`contact card fade-in ${contactoVisible ? "visible" : ""}`}>
       <h2>Contacto</h2>
       <p>¿Quieres colaborar conmigo o tienes alguna consulta? ¡Escríbeme!</p>
       <form className="contact-form" ref={form} onSubmit={sendEmail}>

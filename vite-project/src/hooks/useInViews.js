@@ -7,14 +7,13 @@ export function UseInView() {
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => {
-        // Si el elemento es visible
         if (entry.isIntersecting) {
           setIsVisible(true);
         } else {
-          setIsVisible(false); // Cuando el elemento deja de ser visible
+          setIsVisible(false); 
         }
       },
-      { threshold: 0.2 } // Se activa cuando al menos el 50% del elemento es visible
+      { threshold: 0.1 }
     );
 
     if (ref.current) {
