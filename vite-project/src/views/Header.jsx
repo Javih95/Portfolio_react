@@ -26,7 +26,7 @@ export function Header() {
         </div>
       </div>
       <div className="header-image">
-        <img src="/Foto_perfil.jpeg" alt="Foto de Javih" />
+        <img src="./Foto_perfil.jpeg" alt="Foto de Javih" />
       </div>
     </header>
   );
