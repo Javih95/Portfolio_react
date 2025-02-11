@@ -5,7 +5,7 @@ export function Navbar() {
     <nav className="navbar">
       <div className="navbar-container">
         <a href="/" className="navbar-logo">
-          Javih
+          Portfolio de Javih
         </a>
         <ul className="navbar-menu">
           <li className="navbar-item">
