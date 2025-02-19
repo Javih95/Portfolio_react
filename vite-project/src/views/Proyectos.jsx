@@ -22,15 +22,6 @@ export const Projectos = () => {
       repoLink: 'https://github.com/Javih95/Aguirre-Javier-TPpygame-final/tree/0919bd1e0c1bb25f8abe7bd3c9e11e40543c1bed/tpPygame1/My_game',
     },
     {
-      id: 3,
-      title: 'Portfolio Web',
-      description:
-        'Portfolio personal desarrollado con React y estilizado con CSS puro.',
-      image: 'project3.png',
-      demoLink: '',
-      repoLink: 'https://github.com/usuario/portfolio',
-    },
-    {
       id: 4,
       title: 'Contador con displays',
       description:
