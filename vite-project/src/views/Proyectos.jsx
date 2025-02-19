@@ -8,7 +8,7 @@ export const Projectos = () => {
       title: 'Control de Stock API',
       description:
         'API para gestionar inventarios, desarrollada con Node.js, Express y MySQL.',
-      image: 'project1.png',
+      image: 'controlStock.png',
       demoLink: 'https://tuprojectdemo.com',
       repoLink: 'https://github.com/Javih95/api_controlStock_deploy',
     },
