@@ -5,30 +5,39 @@ export const Projectos = () => {
   const projects = [
     {
       id: 1,
-      title: 'Control de Stock API',
+      title: 'Gestión de Stock y Pedidos - Frontend',
       description:
-        'API para gestionar inventarios, desarrollada con Node.js, Express y MySQL.',
-      image: 'controlStock.png',
-      demoLink: 'https://tuprojectdemo.com',
-      repoLink: 'https://github.com/Javih95/api_controlStock_deploy',
+        'Aplicación web desarrollada con Next.js y TypeScript para gestionar productos, pedidos y clientes. Consume una API REST.Está desplegada en Vercel.',
+      image: 'controldestock.png',
+      demoLink: "https://app-stock-frontend-2xgaomvas-javih95s-projects.vercel.app/dashboard",
+      repoLink: 'https://github.com/Javih95/app-stock.git',
     },
     {
       id: 2,
+      title: 'Control de Stock API',
+      description:
+        'API REST creada con JavaScript, Node.js, Express.js  y Drizzle como ORM. Utiliza SQLite como base de datos, alojada en Turso.Está desplegada en Vercel.',
+      image: 'api.png',
+      repoLink: 'https://github.com/Javih95/TP2-UTN-PIII-C331',
+      demoLink: "https://api-control-stock-deploy.vercel.app/materiales",
+    },
+    {
+      id: 3,
+      title: 'Blog personal',
+      description:
+        'blog personal desarrollado en React y MongoDB',
+      image: './arduinoProject.png',
+      demoLink: '',
+      repoLink: 'https://github.com/Javih95/blog.git',
+    },
+    {
+      id: 4,
       title: 'Guardianes de la selva',
       description:
         'Videojuego 2D desarrollado en Phyton, usando la libreria Pygame.',
       image: './guardianesDeLaSelva.png',
       demoLink: 'https://youtu.be/AEzF_PqgqmM?si=LKtgndIOND08r3Y7',
       repoLink: 'https://github.com/Javih95/Aguirre-Javier-TPpygame-final/tree/0919bd1e0c1bb25f8abe7bd3c9e11e40543c1bed/tpPygame1/My_game',
-    },
-    {
-      id: 4,
-      title: 'Contador con displays',
-      description:
-        'Comenzamos con el armado de un contador de 0 a 99 utilizando dos displays de 7 segmentos y tres botones para controlar la cuenta. luego modificamos este modelo para que al accionar un switch mostrara numeros primos del 0 al 99. a este ultimo se le quito la funcion del contador con botones para aplicar la funcion de controlar un motor de cc en base a la temperatura ambiente que obtenemos de un sensor tmp36 (para accionar y apagar el motor) y un sensor de luz ambiental(que controla el sentido de giro mediante parametros determinados).',
-      image: './arduinoProject.png',
-      demoLink: '',
-      repoLink: 'https://github.com/Javih95/AguirreJavierTParduino.git',
     },
     {
       id: 5,
@@ -42,7 +51,7 @@ export const Projectos = () => {
   ];
 
   return (
-    <section  ref={proyectosRef} id="projects" className={`projects card slide-in-right ${isProyectosVisible ? "visible" : ""}`}>
+    <section ref={proyectosRef} id="projects" className={`projects card slide-in-right ${isProyectosVisible ? "visible" : ""}`}>
       <h2>Proyectos</h2>
       <div className="projects-container">
         {projects.map(project => (

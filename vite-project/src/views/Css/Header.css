@@ -49,3 +49,38 @@
 .header-socials a:hover {
   transform: scale(1.05);
 }
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modal-content {
+  background: #3b0f65;
+  padding: 20px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.modal-subtitle {
+  color: #00bcd4;
+}
+
+.modal-button {
+  color: #fff;
+  background: #00bcd4;
+}
+
+.modal-button-salir {
+  color: #fff;
+  background: red;
+}
