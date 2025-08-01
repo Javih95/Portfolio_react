@@ -9,12 +9,13 @@ export const Projectos = () => {
       description:
         'Aplicación web desarrollada con Next.js y TypeScript para gestionar productos, pedidos y clientes. Consume una API REST.Está desplegada en Vercel.',
       image: 'controldestock.png',
-      demoLink: "https://app-stock-frontend-2xgaomvas-javih95s-projects.vercel.app/dashboard",
+      demoLink: "https://app-stock-frontend.vercel.app/dashboard",
       repoLink: 'https://github.com/Javih95/app-stock.git',
     },
     {
       id: 2,
       title: 'Control de Stock API',
+      
       description:
         'API REST creada con JavaScript, Node.js, Express.js  y Drizzle como ORM. Utiliza SQLite como base de datos, alojada en Turso.Está desplegada en Vercel.',
       image: 'api.png',
