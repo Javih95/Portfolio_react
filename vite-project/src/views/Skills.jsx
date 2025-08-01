@@ -1,7 +1,7 @@
 import './Css/Skills.css';
 import { UseInView } from "../hooks/useInViews";
-import { FaReact, FaNodeJs, FaDatabase, FaJs, FaHtml5, FaBootstrap, FaCogs, FaPython, FaGitAlt, FaGamepad, FaMicrochip, FaAndroid, FaCode, FaCheckSquare, FaPlug, FaPuzzlePiece, FaBook } from 'react-icons/fa';
-
+import { FaReact, FaNodeJs, FaDatabase, FaJs, FaHtml5, FaBootstrap, FaCogs, FaPython, FaGitAlt, FaGamepad, FaMicrochip, FaCheckSquare,FaJava} from 'react-icons/fa';
+import { TbBrandNextjs,TbBrandTypescript,TbBrandMongodb  } from "react-icons/tb";
 export const Skills = () => {
   const skills = [
     { id: 1, name: 'React', icon: <FaReact />, category: 'frontend' },
@@ -18,7 +18,12 @@ export const Skills = () => {
     { id: 12, name: 'Unity (C#)', icon: <FaGamepad />, category: 'other' },
     { id: 13, name: 'Godot (GDScript)', icon: <FaGamepad />, category: 'other' },
     { id: 14, name: 'Arduino (C++)', icon: <FaMicrochip />, category: 'other' },
-    { id: 17, name: 'Unit Testing', icon: <FaCheckSquare />, category: 'other' }
+    { id: 17, name: 'Unit Testing', icon: <FaCheckSquare />, category: 'other' },
+    { id: 18, name: 'Next js', icon: <TbBrandNextjs />, category: 'frontend' },
+    { id: 19, name: 'Typescript', icon: <TbBrandTypescript />, category: 'backend' },
+    { id: 19, name: 'Java', icon: <FaJava />, category: 'backend' },
+    { id: 19, name: 'MongoDb', icon: <TbBrandMongodb />, category: 'other' },
+
   ];
 
   const [skillsRef, skillsVisible] = UseInView();

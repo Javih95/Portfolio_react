@@ -33,7 +33,7 @@ export function Header() {
         <h1 className="header-title">Javier Aguirre</h1>
         <h2 className="header-subtitle">Desarrollador Fullstack</h2>
         <p className="header-description">
-          Transformo desafíos en soluciones efectivas. Si buscas un desarrollador comprometido para tu equipo o proyecto, contactame y trabajemos juntos.
+          Construyo soluciones sólidas, eficientes y escalables. Si estás buscando un desarrollador comprometido, con enfoque en resultados y con pasión por seguir creciendo en la tecnología, estoy listo para sumarme a tu equipo o proyecto. ¡Conectemos y hagámoslo realidad!
         </p>
         <div className="header-socials">
           <a href="https://www.linkedin.com/in/javier-aguirre95" target="_blank" rel="noopener noreferrer">

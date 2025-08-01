@@ -15,10 +15,10 @@ export const Contacto = () => {
       })
       .then(
         () => {
-          console.log('SUCCESS!');
+          alert('Sent!');
         },
         (error) => {
-          console.log('FAILED...', error.text);
+          alert(JSON.stringify(err));
         },
       );
   };

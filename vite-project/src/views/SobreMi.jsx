@@ -1,24 +1,22 @@
 import './Css/SobreMi.css';
-import {LineaDeTiempo} from"../componentes/LineaDeTiempo"
+import { LineaDeTiempo } from "../componentes/LineaDeTiempo"
 import { UseInView } from "../hooks/useInViews";
-export const SobreMi= () => {
+export const SobreMi = () => {
   const [sobreMiRef, sobreMiVisible] = UseInView();
   return (
-    <section id="about-me"  ref={sobreMiRef} className={`about-me card slide-in ${sobreMiVisible ? "visible" : ""}`}>
+    <section id="about-me" ref={sobreMiRef} className={`about-me card slide-in ${sobreMiVisible ? "visible" : ""}`}>
       <h2>Sobre Mí</h2>
       <div className="about-me-content">
         <p>
-        "Soy desarrollador full stack dedicado a crear soluciones innovadoras y videojuegos que fusionan creatividad y funcionalidad. 
-        Mi especialización en tecnologías como React, Node.js y .NET me permite desarrollar aplicaciones web robustas y escalables,
-         mientras que mi interés en el diseño de videojuegos me impulsa a explorar nuevas formas de interacción y entretenimiento. 
-         Actualmente, trabajo en proyectos que combinan ambos mundos, buscando crear experiencias únicas para los usuarios."
+          Soy curioso, autodidacta y apasionado por la tecnología. Disfruto tanto de construir soluciones prácticas como de explorar áreas creativas como el diseño de videojuegos y la robótica.
+          Cuando no estoy trabajando, me gusta:
+          Diseñar juegos interactivos que mezclen narrativa y mecánicas simples.
+          Aprender sobre inteligencia artificial, desarrollo multiplataforma y nuevas tendencias del sector.
+          Crear prototipos con Arduino que enseñen programación y electrónica de forma lúdica.
         </p>
-        <p>
-        Disfruto del aprendizaje continuo y la exploración de nuevas tecnologías.
-        En mi tiempo libre, me sumerjo en el mundo del desarrollo de videojuegos,me informo y experimento con avances tecnologicos y doy vida a proyectos de robótica con Arduino.
-        </p>
+        <p>Siempre busco crecer profesionalmente, compartir lo que aprendo y ser parte de proyectos que generen un impacto positivo.</p>
       </div>
-      <LineaDeTiempo/>
+      <LineaDeTiempo />
     </section>
   );
 };
