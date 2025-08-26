@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { UseInView } from "../hooks/useInViews";
 import './Css/Header.css';
-import { FaLinkedin, FaGithub } from "react-icons/fa";
+import { FaLinkedin, FaGithub,FaFileDownload} from "react-icons/fa";
 import { IoMail } from "react-icons/io5";
 
 export function Header() {
@@ -44,6 +44,10 @@ export function Header() {
           </a>
           <a href="#" onClick={handleClickMail}>
             <IoMail />
+          </a>
+           <a   href="./JavierAguirreCV.pdf" download="JavierAguirreCV.pdf" target="_blank" rel="noopener noreferrer"  className="cv-download">
+            <FaFileDownload className="cv-icon"/>
+            <p>Descargar CV</p>
           </a>
         </div>
       </div>
