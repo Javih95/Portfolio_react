@@ -19,9 +19,9 @@ export function Header() {
 
   const copiarEmail = async () => {
     try {
-      await navigator.clipboard.writeText("javih_aguirre@outlook.es");
+      await navigator.clipboard.writeText("javih.dev95@gmail.com");
       setCopiado(true);
-      setTimeout(() => setCopiado(false), 2000); // Reinicia el estado después de 2 segundos
+      setTimeout(() => setCopiado(false), 2000);
     } catch (err) {
       console.error("Error al copiar:", err);
     }
@@ -56,7 +56,7 @@ export function Header() {
         <div className="modal-overlay" onClick={cerrarModal}>
           <div className="modal-content" onClick={e => e.stopPropagation()}>
             <h2 className="modal-subtitle">Mi email es:</h2>
-            <strong>javih_aguirre@outlook.es</strong>
+            <strong>javih.dev95@gmail.com</strong>
             <br /><br />
             <button className="modal-button" onClick={copiarEmail}>
               {copiado ? "¡Copiado!" : "Copiar email"}

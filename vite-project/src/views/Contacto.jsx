@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import { useRef } from 'react';
 import emailjs from '@emailjs/browser';
 import { UseInView } from "../hooks/useInViews";
 import "./Css/Contacto.css"
@@ -43,7 +43,7 @@ export const Contacto = () => {
         <a href="https://github.com/Javih95" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
-        <a href="mailto:javih_aguirre@outlook.es" target="_blank" rel="noopener noreferrer">
+        <a href="mailto:javih.dev95@gmail.com" target="_blank" rel="noopener noreferrer">
           Email
         </a>
       </div>

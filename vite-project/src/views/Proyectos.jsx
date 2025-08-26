@@ -26,13 +26,22 @@ export const Projectos = () => {
       id: 3,
       title: 'Blog personal',
       description:
-        'blog personal desarrollado en React y MongoDB',
-      image: './arduinoProject.png',
-      demoLink: '',
+        'Blog personal desarrollado: frontend en React , JavaScript y desplegado en netlify y backend con Express , Node.js y MongoDB desplegado en render',
+      image: './blogImagen.png',
+      demoLink: 'https://68acf89fe89b8f70a2a3cfde--storied-cendol-727841.netlify.app/',
       repoLink: 'https://github.com/Javih95/blog.git',
     },
-    {
+        {
       id: 4,
+      title: 'Refrigestion',
+      description:
+      'Aplicación pensada para optimizar la gestión de servicios de un instalador de aires acondicionados.Funcionalidades principales: Registro de clientes y equipos de aire acondicionado.Carga y seguimiento de los servicios realizados.Generación de reportes detallados en PDF, a modo de certificado de servicio para el cliente.Aplicación de escritorio desarrollada con .NET 8 (WinForms) y SQL Server',
+      image: './refrigestionImagen.png',
+      demoLink: '',
+      repoLink: 'https://github.com/Javih95/refrigestion.git',
+    },
+    {
+      id: 5,
       title: 'Guardianes de la selva',
       description:
         'Videojuego 2D desarrollado en Phyton, usando la libreria Pygame.',
@@ -41,7 +50,7 @@ export const Projectos = () => {
       repoLink: 'https://github.com/Javih95/Aguirre-Javier-TPpygame-final/tree/0919bd1e0c1bb25f8abe7bd3c9e11e40543c1bed/tpPygame1/My_game',
     },
     {
-      id: 5,
+      id:6,
       title: 'Proyecto recuperar Bot',
       description:
         'Proyecto para armar y programar un robot basado en arduino Uno, donde se busca recrear el instructivo de armado y programar desde cero la funcionalidad del mismo debido a que la plataforma donde fue comprado desaparecio en 2021',
@@ -57,11 +66,15 @@ export const Projectos = () => {
       <div className="projects-container">
         {projects.map(project => (
           <div className="project-card" key={project.id}>
-            <img
-              src={project.image}
-              alt={project.title}
-              className="project-image"
-            />
+            <div className="project-image-conteiner">
+                <img
+                src={project.image}
+                alt={project.title}
+                className="project-image"
+              />
+
+            </div>
+
             <h3>{project.title}</h3>
             <p>{project.description}</p>
             <div className="project-links">

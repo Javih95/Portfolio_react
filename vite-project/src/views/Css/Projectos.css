@@ -29,10 +29,16 @@
 
 .project-image {
   width: 100%;
+  height: auto;
   border-radius: 8px;
   margin-bottom: 1rem;
 }
-
+.project-image-conteiner{
+  width: 350px;
+  height: 350px;
+  display: flex;
+  align-items: center;
+}
 .project-card h3 {
   font-size: 1.5rem;
   margin: 0.5rem 0;
