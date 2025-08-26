@@ -7,6 +7,8 @@ import { Projectos } from './views/Proyectos';
 import { SobreMi } from './views/SobreMi';
 import { Contacto } from './views/Contacto';
 import { Footer } from './views/Footer';
+import { Formacion } from './views/Formacion';
+
 function App() {
   return (
     <>
@@ -15,6 +17,7 @@ function App() {
     <PerfilProfesional/>
     <Skills/>
     <Projectos/>
+    <Formacion/>
     <SobreMi/>
     <Contacto/>
     <Footer/>

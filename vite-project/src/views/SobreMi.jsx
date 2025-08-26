@@ -8,11 +8,10 @@ export const SobreMi = () => {
       <h2>Sobre Mí</h2>
       <div className="about-me-content">
         <p>
-          Soy curioso, autodidacta y apasionado por la tecnología. Disfruto tanto de construir soluciones prácticas como de explorar áreas creativas como el diseño de videojuegos y la robótica.
-          Cuando no estoy trabajando, me gusta:
-          Diseñar juegos interactivos que mezclen narrativa y mecánicas simples.
-          Aprender sobre inteligencia artificial, desarrollo multiplataforma y nuevas tendencias del sector.
-          Crear prototipos con Arduino que enseñen programación y electrónica de forma lúdica.
+          Soy curioso, autodidacta y apasionado por la tecnología. 
+          Disfruto tanto de construir soluciones prácticas como de explorar áreas creativas como el diseño de videojuegos y la robótica.
+           Me gusta Aprender sobre inteligencia artificial, desarrollo multiplataforma y nuevas tendencias del sector,
+           crear prototipos con Arduino que enseñen programación y electrónica de forma lúdica.
         </p>
         <p>Siempre busco crecer profesionalmente, compartir lo que aprendo y ser parte de proyectos que generen un impacto positivo.</p>
       </div>

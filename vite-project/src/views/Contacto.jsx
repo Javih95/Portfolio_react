@@ -15,7 +15,7 @@ export const Contacto = () => {
       })
       .then(
         () => {
-          alert('Sent!');
+          alert('Mensaje enviado correctamente!');
         },
         (error) => {
           alert(JSON.stringify(err));
