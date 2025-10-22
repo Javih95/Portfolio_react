@@ -21,8 +21,8 @@ export const Skills = () => {
     { id: 17, name: 'Unit Testing', icon: <FaCheckSquare />, category: 'other' },
     { id: 18, name: 'Next js', icon: <TbBrandNextjs />, category: 'frontend' },
     { id: 19, name: 'Typescript', icon: <TbBrandTypescript />, category: 'backend' },
-    { id: 19, name: 'Java', icon: <FaJava />, category: 'backend' },
-    { id: 19, name: 'MongoDb', icon: <TbBrandMongodb />, category: 'other' },
+    { id: 20, name: 'Java', icon: <FaJava />, category: 'backend' },
+    { id: 21, name: 'MongoDb', icon: <TbBrandMongodb />, category: 'other' },
 
   ];
 
