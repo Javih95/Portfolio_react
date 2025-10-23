@@ -7,15 +7,13 @@ export const SobreMi = () => {
     <section id="about-me" ref={sobreMiRef} className={`about-me card slide-in ${sobreMiVisible ? "visible" : ""}`}>
       <h2>Sobre Mí</h2>
       <div className="about-me-content">
-        <p>
-          Soy curioso, autodidacta y apasionado por la tecnología. 
-          Disfruto tanto de construir soluciones prácticas como de explorar áreas creativas como el diseño de videojuegos y la robótica.
-           Me gusta Aprender sobre inteligencia artificial, desarrollo multiplataforma y nuevas tendencias del sector,
-           crear prototipos con Arduino que enseñen programación y electrónica de forma lúdica.
-        </p>
-        <p>Siempre busco crecer profesionalmente, compartir lo que aprendo y ser parte de proyectos que generen un impacto positivo.</p>
+        <ul>
+          <li>Curioso y autodidacta, disfruto explorando áreas creativas como videojuegos y robótica.</li>
+          <li>Me interesa la inteligencia artificial y el desarrollo multiplataforma.</li>
+          <li>Siempre buscando aprender y aplicar nuevos conocimientos.</li>
+        </ul>
+        <p>Busco crecer profesionalmente, compartir lo que aprendo y ser parte de proyectos que generen un impacto positivo.</p>
       </div>
-      <LineaDeTiempo />
     </section>
   );
 };

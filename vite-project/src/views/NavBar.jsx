@@ -9,11 +9,6 @@ export function Navbar() {
         </a>
         <ul className="navbar-menu">
           <li className="navbar-item">
-            <a href="#about-me" className="navbar-link">
-              Sobre mí
-            </a>
-          </li>
-          <li className="navbar-item">
             <a href="#projects" className="navbar-link">
               Proyectos
             </a>
@@ -21,6 +16,11 @@ export function Navbar() {
           <li className="navbar-item">
             <a href="#skills" className="navbar-link">
               Habilidades
+            </a>
+          </li>
+          <li className="navbar-item">
+            <a href="#about-me" className="navbar-link">
+              Sobre mí
             </a>
           </li>
           <li className="navbar-item">

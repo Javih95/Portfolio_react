@@ -1,81 +1,133 @@
+/* Contenedor principal de la sección */
 .timeline {
-    text-align: left;
-    padding: 0px 0px;
-    padding-right: 4rem;
-}
-.timeline-container {
-  height: 400px;
-  max-width: 750px;
-  width: 100%;
-  margin: 2rem auto;
-  margin-left: 2rem;
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: nowrap;
-  padding: 20px;
-  overflow-x: auto;
-  padding-left: 110px;
-  padding-right: 10px;
+  text-align: center;
+  margin: 3rem 0;
+  padding: 2rem 0 3rem;
+  color: #fff;
+  overflow: hidden;
 }
 
+/* Título */
+.timeline h2 {
+  color: #b983ff;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+}
 
+/* Línea central */
 .timeline-line {
   position: absolute;
   top: 50%;
   left: 0;
-  right: 0;
+  width: 100vw;
   height: 2px;
-  background-color: #1c1d80;
-  z-index: 0; 
+  background-color: rgba(185, 131, 255, 0.4);
+  z-index: 0;
 }
 
-.timeline-event {
+/* Contenedor horizontal de eventos */
+.timeline-container {
+  display: flex;
+  flex-wrap: nowrap;       /* todos en fila */
+  gap: 4rem;               /* espacio entre eventos */
+  overflow-x: auto;        /* scroll horizontal */
+  overflow-y: visible;
+  padding: 3rem 1rem;      /* espacio para tarjetas arriba/abajo */
+  scroll-behavior: smooth;
   position: relative;
+  min-height: 260px;       /* altura suficiente para tarjetas arriba/abajo */
+}
+
+/* Evento */
+.timeline-event {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 120px;
-}
-
-.timeline-event.above .timeline-content {
-  position: absolute;
-  top: -210px;
-  text-align: center;
-}
-
-.timeline-event.below .timeline-content {
-  position: absolute;
-  bottom: -210px;
-  text-align: center;
-}
-
-.timeline-circle {
-  width: 20px;
-  height: 20px;
-  background-color: #4CAF50;
-  border: 3px solid white;
-  border-radius: 50%;
+  min-width: 160px;
+  position: relative;
   z-index: 1;
 }
 
-.timeline-content {
-  margin: 2rem;
-  padding: 8px;
-  background-color: #f5e6e6;
-  border-radius: 8px;
-  width: 100px;
-  height: 150px;
+/* Posiciones intercaladas de las tarjetas */
+.timeline-event:nth-child(odd) .timeline-content {
+  transform: translateY(-120%); /* tarjeta arriba */
 }
 
+.timeline-event:nth-child(even) .timeline-content {
+  transform: translateY(60%);   /* tarjeta abajo */
+}
+
+/* Círculo central */
+.timeline-circle {
+  width: 20px;
+  height: 20px;
+  background-color: #b983ff;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  z-index: 2;
+  box-shadow: 0 0 12px rgba(185, 131, 255, 0.7);
+  margin-bottom: 0.5rem;
+  flex-shrink: 0; /* evita que se achique */
+}
+
+/* Tarjeta */
+.timeline-content {
+  background: #1e1e1e;
+  border: 1px solid #333;
+  color: #fff;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 160px;
+  min-height: 130px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.timeline-content:hover {
+  transform: scale(1.05) translateY(0); /* hover neutraliza transform temporalmente */
+  box-shadow: 0 0 14px rgba(185, 131, 255, 0.5);
+  border-color: #b983ff;
+}
+
+/* Textos */
 .timeline-content h3 {
-  font-size: 16px;
-  margin-bottom: 5px;
-  color: #333;
+  color: #b983ff;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
 }
 
 .timeline-content p {
-  font-size: 14px;
-  color: #666;
+  font-size: 0.9rem;
+  color: #ddd;
+  line-height: 1.4;
+}
+
+/* Scrollbar horizontal */
+.timeline-container::-webkit-scrollbar {
+  height: 6px;
+}
+
+.timeline-container::-webkit-scrollbar-thumb {
+  background: #b983ff;
+  border-radius: 10px;
+}
+
+/* --- Responsivo --- */
+@media (max-width: 768px) {
+  .timeline-container {
+    gap: 2rem;
+    padding: 1rem 0;
+    min-height: 220px;
+  }
+
+  .timeline-content {
+    width: 130px;
+    font-size: 0.85rem;
+    transform: translateY(0); /* en móvil todas alineadas */
+  }
+
+  .timeline-content h3 {
+    font-size: 0.9rem;
+  }
 }

@@ -1,39 +1,26 @@
-
-/* --- Contenedor principal --- */
 .profile-card {
   background-color: rgba(20, 20, 20, 0.85);
   border-radius: 15px;
   padding: 2rem;
-  margin: 3rem auto;
+  margin: 2rem auto;
   max-width: 900px;
-  box-shadow: 0 0 20px rgba(155, 93, 229, 0.3);
+  box-shadow: 0 0 25px rgba(155, 93, 229, 0.3);
   transition: transform 0.4s ease, opacity 0.4s ease;
-  opacity: 0;
-  transform: translateX(50px);
-}
-/* --- Contenido interno --- */
-.contenido {
-  margin: 0;
-  color: #e0e0e0;
 }
 
 .profile-card h2 {
   font-size: 2rem;
   color: #b983ff;
-  margin-bottom: 1rem;
   text-align: center;
 }
 
 .profile-card p {
   font-size: 1.1rem;
   line-height: 1.8;
-  margin-bottom: 1rem;
   text-align: justify;
   color: #ccc;
 }
 
-/* --- Efecto hover sutil --- */
 .profile-card:hover {
-  box-shadow: 0 0 25px rgba(155, 93, 229, 0.5);
   transform: translateY(-5px);
 }

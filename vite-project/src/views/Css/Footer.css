@@ -1,15 +1,35 @@
 .footer {
-  color: #fff;
+  background: rgba(18, 18, 18, 0.95);
+  color: #f5f5f5;
   text-align: center;
-  padding: 1.5rem 0;
-  font-size: 0.9rem;
-  box-shadow: 0px 4px 8px rgba(0.3, 0, 0, 0);
-}
-
-.footer span {
-  color: #00bcd4;
+  padding: 2rem 1rem;
+  font-size: 0.95rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  margin-top: 24px;
 }
 
 .footer p {
   margin: 0.5rem 0;
+  color: #dcdcdc;
+}
+
+.footer span {
+  color: #b983ff;
+  font-weight: 600;
+}
+
+.footer a {
+  color: #b983ff;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #d2a8ff;
+}
+
+/* Animación sutil al hacer hover */
+.footer:hover {
+  box-shadow: 0 -4px 15px rgba(185, 131, 255, 0.35);
 }

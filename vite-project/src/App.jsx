@@ -36,8 +36,8 @@ function App() {
     <Navbar/>
     <Header/>
     <PerfilProfesional/>
-    <Skills/>
     <Projectos/>
+    <Skills/>
     <Formacion/>
     <SobreMi/>
     <Contacto/>

@@ -5,6 +5,24 @@ export const Projectos = () => {
   const [proyectosRef, isProyectosVisible] = UseInView();
 
   const projects = [
+      {
+      id: 4,
+      type: 'Desktop',
+      title: 'Asistente de IA',
+      description: 'Snake es una aplicación de escritorio en Python que funciona como asistente conversacional inteligente. Permite interactuar mediante texto y voz, gestionar múltiples chats, guardar historial de conversaciones y descargar respuestas. Está diseñada con una interfaz moderna en modo oscuro con detalles en violeta, inspirada en aplicaciones de mensajería.',
+      image: './snake.png',
+      demoLink: 'https://youtu.be/7EG01CCD1PA?si=rxHOds6Y9kCIFDiV',
+      repoLink: 'https://github.com/Javih95/Mi_asistente_snake_Docu.git',
+  },
+    {
+      id: 7,
+      type: 'Desktop',
+      title: 'Refrigestion',
+      description: 'Aplicación de escritorio en .NET 8 (WinForms) y SQL Server para gestionar servicios de aire acondicionado.',
+      image: './refrigestionImagen.png',
+      demoLink: '',
+      repoLink: 'https://github.com/Javih95/refrigestion.git',
+    },
     {
       id: 1,
       type: 'Web',
@@ -30,16 +48,7 @@ export const Projectos = () => {
       description: 'Frontend para ecomerce, desarrollado con React. Consume una API REST. Incluye catálogo de productos, carrito de compras y gestión de usuarios.',
       image: './ecomerce.png',
       demoLink: '',
-      repoLink: 'https://github.com/Javih95/ecomerce.git',
-    },
-    {
-      id: 4,
-      type: 'Desktop',
-      title: 'Refrigestion',
-      description: 'Aplicación de escritorio en .NET 8 (WinForms) y SQL Server para gestionar servicios de aire acondicionado.',
-      image: './refrigestionImagen.png',
-      demoLink: '',
-      repoLink: 'https://github.com/Javih95/refrigestion.git',
+      repoLink: 'https://github.com/Javih95/eCommerce.git',
     },
     {
       id: 5,
@@ -60,15 +69,6 @@ export const Projectos = () => {
       repoLink: 'https://github.com/Javih95/ProyectoRobot.git',
     },
     {
-      id: 7,
-      type: 'Web',
-      title: 'Invitacion a Boda',
-      description: 'Sitio web de invitación a boda, desarrollado con HTML y CSS. Incluye secciones para detalles del evento, confirmación de asistencia conectado a servicio de Email y Google Sheets. para demo Usar el codigo G003',
-      image: './boda.png',
-      demoLink: 'https://javih95.github.io/invitacion_boda/',
-      repoLink: 'https://github.com/Javih95/invitacion_boda.git',
-    },
-    {
       id: 8,
       type: 'API',
       title: 'Api para confirmar asistencia a boda',
@@ -82,7 +82,7 @@ export const Projectos = () => {
       title: 'Api para ecomerce',
       description: 'API REST para ecomerce, desarrollada con JavaScript, Node.js, Express.js y Sequelize como ORM. Utiliza MySql como base de datos. Incluye manejo de productos, usuarios y pedidos.',
       image: './apiEcomerce.png',
-      repoLink: 'https://github.com/Javih95/ecomerce-api.git',
+      repoLink: 'https://github.com/Javih95/eCommerceBackend.git',
     },
     {
       id: 10,
