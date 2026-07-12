@@ -4,7 +4,7 @@ export function Navbar() {
   return (
     <nav className="navbar">
       <div className="navbar-container">
-        <a href="/" className="navbar-logo">
+        <a href="#Header" className="navbar-logo">
           Portfolio de Javih
         </a>
         <ul className="navbar-menu">

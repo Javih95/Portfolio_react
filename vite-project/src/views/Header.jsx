@@ -28,13 +28,15 @@ export function Header() {
   };
 
   return (
-    <header ref={headerRef} className={`header card slide-in ${isHeaderVisible ? "visible" : ""}`}>
+    <header ref={headerRef} id="Header" className={`header card slide-in ${isHeaderVisible ? "visible" : ""}`}>
       <div className="header-content">
         <h1 className="header-title">Javier Aguirre</h1>
-        <h2 className="header-subtitle">Desarrollador Fullstack | Enfoque Backend</h2>
+        <h2 className="header-subtitle">Desarrollador Full Stack | Especializado en Backend Java</h2>
         <p className="header-description">
-          Busco integrarme a equipos donde pueda seguir desarrollando mis habilidades y aportar valor en proyectos reales.
-          Si estás buscando un desarrollador comprometido , con pasión por seguir aprendiendo y creciendo en el mundo IT, estoy listo para sumarme a tu equipo o proyecto. ¡Conectemos y hagámoslo realidad!
+          Cuento con experiencia
+          en el desarrollo de aplicaciones web, APIs REST y bases de datos relacionales.
+           Actualmente continúo formándome y participando en proyectos que me 
+         permiten aplicar buenas prácticas de desarrollo y ampliar mis conocimientos técnicos.
         </p>
         <div className="header-socials">
           <a href="https://www.linkedin.com/in/javier-aguirre95" target="_blank" rel="noopener noreferrer">
